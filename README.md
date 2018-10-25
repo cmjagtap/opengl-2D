@@ -1,4 +1,4 @@
-# OpenGl Objects
+# OpenGL Objects
 
 #### AUTHOR:
 
