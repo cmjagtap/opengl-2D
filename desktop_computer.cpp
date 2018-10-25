@@ -3,11 +3,9 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdarg.h>
-
 int width = 800, height = 800; 
 void drawLine(int x1, int y1, int x2, int y2) 
 { 
-  //glClear(GL_COLOR_BUFFER_BIT); 
   glLineWidth(5);
   glBegin(GL_LINES); 
   glVertex2i(x1, y1); 
@@ -16,6 +14,12 @@ void drawLine(int x1, int y1, int x2, int y2)
   glFlush(); 
 }
 
+void printButton(int x, int y) {
+  glPointSize(7);
+  glBegin(GL_POINTS);
+  glVertex2i(x,y);
+  glEnd();
+}
 void bitmap_output(int x, int y, char *string, void *font)
 {
   int len, i;
@@ -38,7 +42,8 @@ void stroke_output(GLfloat x, GLfloat y, char *format,...)
   glPushMatrix();
   glTranslatef(x, y, 0);
   glScalef(0.005, 0.005, 0.005);
-  for (p = buffer; *p; p++)
+  for (p = buffer; *p; p++)  glColor3f(1.0, 1.0, 1.0); 
+
     glutStrokeCharacter(GLUT_STROKE_ROMAN, *p);
   glPopMatrix();
 }
@@ -56,6 +61,13 @@ void display()
   drawLine(240,500,290,460);// stand right
   drawLine(180,460,290,460);//stand down
 
+  glColor3f(1.0,0.0,0.0);
+  printButton(270, 500); //onscreen
+  printButton(290, 500); //onscreen
+  printButton(310, 500); //onscreen
+
+  glColor3f(1.0, 1.0, 1.0); 
+
   //CPU
   drawLine(420,600,420,400);//left
   drawLine(500,600,500,400);//right
@@ -63,8 +75,33 @@ void display()
   drawLine(420,400,500,400);//left/
   drawLine(420,500,500,500);//left/
   drawLine(420,525,500,525);//left/
+
+  //Keyboard
+  drawLine(180,400,300,400);//up
+  drawLine(160,350,320,350);//down
+  drawLine(300,400,320,350);//right
+  drawLine(180,400,160,350);//left
+  printButton(200, 385);
+  printButton(220, 385);
+  printButton(240, 385);
+  printButton(260, 385);
+  printButton(280, 385);
+  printButton(180, 368);
+  printButton(200, 368);
+  printButton(220, 368);
+  printButton(240, 368);
+  printButton(260, 368);
+  printButton(280, 368);
+  printButton(300, 368);
+
+  //button cpu
+    glColor3f(1.0,0.0,0.0);
+    printButton(457, 513);
+  
   glColor3f(1.0,0.0,0.0);
   bitmap_output(200,550, "PUCSD",GLUT_BITMAP_TIMES_ROMAN_24);
+  bitmap_output(430,540, "CPU",GLUT_BITMAP_TIMES_ROMAN_24);
+
   glFlush(); 
 }
 
