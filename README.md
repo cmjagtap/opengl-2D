@@ -11,7 +11,8 @@
 
 
 #### Requirment  :
-		Need to install opengl libraries.
+		install following library.  
+		sudo apt-get install freeglut3-dev
 
 #### Compilation :  
 
