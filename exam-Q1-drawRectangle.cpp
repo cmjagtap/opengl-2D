@@ -52,7 +52,7 @@ int main(int argc, char** argv)
   glutInitWindowSize(width,height); 
   glutCreateWindow("Desktop"); 
   glutDisplayFunc(display); 
-  myinit(); 
+  myinit();
   glutMainLoop(); 
   return 0; 
 }
