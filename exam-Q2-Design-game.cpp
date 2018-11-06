@@ -89,7 +89,7 @@ void display()
   drawBall(350,500);
   glColor3f(1.0,0.0,1.0);
   bitmap_output(340,490,"Ball",GLUT_BITMAP_TIMES_ROMAN_16);
-  glFlush(); 
+  glFlush();
 }
 
 
