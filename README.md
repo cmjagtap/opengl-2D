@@ -7,7 +7,7 @@
 
 #### DESCRIPTION:
 		
-		I have implimented some Geometric shapes and objects in opengl 2D using c and cpp language  
+		I have implimented some Geometric shapes and objects in opengl 2D and 3D using c and cpp language  
 
 
 #### Requirment  :
