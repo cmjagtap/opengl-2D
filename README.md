@@ -16,7 +16,7 @@
 
 #### Compilation :  
 
-	   g++ program_name -lglut -lGL -lGLU -lGLEW
+	   g++ program_name -lglut -lGL -lGLU 
 
 #### Execution : 
 	
