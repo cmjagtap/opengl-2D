@@ -34,3 +34,33 @@
        f) Transfomation
    2) Polar cordinate system
    3) Cartetian cordinate system
+12) 3D CG 
+      1) parallel projection
+      2) orthographic projection
+      3) Oblique projection
+      4) Isomorphic projection
+      5) Perspective projection
+      * Translation
+      * Rotation 
+      * Scaling
+      * shear
+      * Transfomation matrices
+14) Curves Types of curve
+    1) Implicit curve
+    2) Explicite curve
+    3) parametric curve
+    4) bezier curve
+      - Properties of bezier curve
+    5) B-spline 
+        1) Approximation curve
+        2) Interpolation curve
+        - Properties of B-spline
+15) Polygon Surfaces
+    - Advantages, Disadvantages
+16) Visual surface detection
+    - Depth buffer(z-buffer)
+      -Advantages, Disadvantages
+    - ScanLine Method
+    - Area sub-divided method
+    - Back-Face detection
+    - A-buffer
