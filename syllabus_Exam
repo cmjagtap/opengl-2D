@@ -1,0 +1,36 @@
+1) What is CG?
+2) CRT
+3) Raster scan (uses scanline)
+4) Random scan or vector scan(vector display, calligraphic display
+5) Applications of CG
+  -GUI, Business,cartography,whether maps,sattelite maps,medical,artist,architecture,photo-enchancement
+  -training simulators,entertainment
+ Vector
+   1) Addition of vector
+   2) dot product
+   3) cross product
+   4) vector substraction
+ * Rasterization
+
+6) Line genration algorithms
+    1) DDA (Digital Diffrantial analyser)
+    2) Bresenham's Line Genration
+    3) Mid-point Algo
+7) Cicle genration Algo
+    using Bresenhma's algo and Mid-point
+8) Point cliping
+9) Line cliping
+    1) Cohen-Sutherland line cliping
+    2) Cyrus-Beck line cliping algo
+10) Bitmap Graphics
+11) 2D transformation
+    Cordinate systems in cg
+   1) Homogenous coridnate system
+       a) Translation
+       b) Rotation
+       c) Scaling
+       d) Reflaction
+       e) Shear
+       f) Transfomation
+   2) Polar cordinate system
+   3) Cartetian cordinate system
